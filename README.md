@@ -52,3 +52,7 @@ this application was built using
 - PostgreSQL
 - TypeOrm
 - cache system
+
+to test just upload the project connecting to a postgres database and import the API.postman_collection.json file to your Postman
+
+use the envs that are in the .env.example

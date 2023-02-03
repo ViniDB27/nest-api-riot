@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "8e744773-ade3-4b21-929c-77a2166b77ab",
+		"name": "API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9194628"
+	},
+	"item": [
+		{
+			"name": "matches by summoner name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/matches/xerasnegas?regionCode=br1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"matches",
+						"xerasnegas"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "start",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "queue",
+							"value": "450",
+							"disabled": true
+						},
+						{
+							"key": "regionCode",
+							"value": "br1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "summary by summoner name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/summary/ttvlegitkorea?regionCode=na1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"summary",
+						"ttvlegitkorea"
+					],
+					"query": [
+						{
+							"key": "queue",
+							"value": "450",
+							"disabled": true
+						},
+						{
+							"key": "regionCode",
+							"value": "na1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rank by puuid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/player/4Py94n9H6HW0_U_WR-aaCKmJpPifDk5EjClvPpLEDTToSm8Ei9UmyAj59z8nPf3ssb5qOm4eFS_HTg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"player",
+						"4Py94n9H6HW0_U_WR-aaCKmJpPifDk5EjClvPpLEDTToSm8Ei9UmyAj59z8nPf3ssb5qOm4eFS_HTg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
