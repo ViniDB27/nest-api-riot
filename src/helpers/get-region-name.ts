@@ -1,4 +1,4 @@
-import { RegionCode, RegionName } from 'src/services/riot/riot.types';
+import { RegionCode, RegionName } from '../services/riot/riot.types';
 
 export const getRegionName = (regionCode: RegionCode): RegionName => {
   switch (regionCode) {

@@ -8,13 +8,13 @@ import {
 } from '@nestjs/common';
 import { MatchesService } from './matches.service';
 import { RegionCode } from '../services/riot/riot.types';
-import { cacheIsValid } from 'src/helpers/cache-is-valid';
+import { cacheIsValid } from '../helpers/cache-is-valid';
 
 @Controller('matches')
 export class MatchesController {
   constructor(
     private readonly matchesService: MatchesService,
-    @Inject(CACHE_MANAGER) private cacheManager: any,
+    @Inject(CACHE_MANAGER) public cacheManager: any,
   ) {}
 
   @Get(':summonerName')

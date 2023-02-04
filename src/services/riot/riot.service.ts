@@ -30,7 +30,7 @@ export class RiotService {
       return response.data;
     } catch (error) {
       const axiosError = error as AxiosError;
-      console.log({ ...axiosError });
+      // console.log({ ...axiosError });
       throw new HttpException(axiosError.message, axiosError.status);
     }
   }
@@ -52,7 +52,7 @@ export class RiotService {
       return response.data;
     } catch (error) {
       const axiosError = error as AxiosError;
-      console.log({ ...axiosError });
+      // console.log({ ...axiosError });
       throw new HttpException(axiosError.message, axiosError.status);
     }
   }
@@ -67,7 +67,7 @@ export class RiotService {
       return response.data;
     } catch (error) {
       const axiosError = error as AxiosError;
-      console.log({ ...axiosError });
+      // console.log({ ...axiosError });
       throw new HttpException(axiosError.message, axiosError.status);
     }
   }
@@ -82,7 +82,7 @@ export class RiotService {
       return response.data;
     } catch (error) {
       const axiosError = error as AxiosError;
-      console.log({ ...axiosError });
+      // console.log({ ...axiosError });
       throw new HttpException(axiosError.message, axiosError.status);
     }
   }

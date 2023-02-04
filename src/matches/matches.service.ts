@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { getRegionName } from 'src/helpers/get-region-name';
-import { PlayerService } from 'src/player/player.service';
+import { getRegionName } from '../helpers/get-region-name';
+import { PlayerService } from '../player/player.service';
 import { RiotService } from '../services/riot/riot.service';
 import {
   Match,

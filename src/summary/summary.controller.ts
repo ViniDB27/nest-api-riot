@@ -6,9 +6,9 @@ import {
   Param,
   Query,
 } from '@nestjs/common';
-import { RegionCode } from 'src/services/riot/riot.types';
+import { RegionCode } from '../services/riot/riot.types';
 import { SummaryService } from './summary.service';
-import { cacheIsValid } from 'src/helpers/cache-is-valid';
+import { cacheIsValid } from '../helpers/cache-is-valid';
 
 @Controller('summary')
 export class SummaryController {

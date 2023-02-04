@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
-import { getQueueId } from 'src/helpers/get-queue-id';
-import { MatchesService } from 'src/matches/matches.service';
-import { PlayerService } from 'src/player/player.service';
+import { getQueueId } from '../helpers/get-queue-id';
+import { MatchesService } from '../matches/matches.service';
+import { PlayerService } from '../player/player.service';
 import { RiotService } from '../services/riot/riot.service';
 import { RegionCode, Summoner } from '../services/riot/riot.types';
 
@@ -98,7 +98,7 @@ export class SummaryService {
     }
 
     return {
-      gameMode: matches[0].info.gameMode,
+      gameMode: matches[0]?.info?.gameMode ?? 'Unknown',
       kda: kda / matches.length,
       cs: cs / matches.length,
       vision: vision / matches.length,
